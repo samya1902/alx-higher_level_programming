@@ -6,7 +6,6 @@ def safe_print_list_integers(my_list=[], x=0):
     Args:
         my_list(list): list
         x (int): nb of elements to print
-        
     Retruns:
         nbr of elements to print
     """
