@@ -4,9 +4,17 @@ import sys
 
 
 def safe_print_integer_err(value):
+    """prints an integer with "{:d}".format()
+
+    Args:
+        value (int): integer to print
+
+    Returns:
+        True or flase
+    """
     try:
         print("{:d}".format(value))
         return (True)
-    except (TrypeError, ValueError):
+    except (TypeError, ValueError):
         print("Exception: {}".format(sys.exc_info()[1]), file=sys.stderr)
         return (False)
